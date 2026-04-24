@@ -1,0 +1,10 @@
+# Ignore modules in any subfolder
+**/node_modules/
+
+# Ignore environment variables (Image 5 shows you have an .env in backend)
+.env
+**/.env
+
+# Ignore build files
+frontend/build/
+frontend/dist/
