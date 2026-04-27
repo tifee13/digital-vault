@@ -25,8 +25,8 @@ const registerUser = async (req, res) => {
             user: { id: user._id, email: user.email, username: user.username } 
         });
     } catch (error) {
-        console.log("THE ERROR IS HERE:", error); // This shows the error in your VS Code terminal
-        res.status(500).json({ message: error.message }); // This shows the error in your browser
+        console.log("THE ERROR IS HERE:", error); 
+        res.status(500).json({ message: error.message }); 
     }
 };
 
@@ -46,6 +46,7 @@ const loginUser = async (req, res) => {
 
         res.status(200).json({
             message: "Login successful",
+            user: { id: user._id, email: user.email, username: user.username }
         });
     } catch (error) {
         console.log("THE ERROR IS HERE:", error); 
